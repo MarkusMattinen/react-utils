@@ -1,0 +1,56 @@
+{
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": "https://github.com/MarkusMattinen/react-utils",
+  "homepage": "https://markusmattinen-react-utils-storybook.vercel.app",
+  "keywords": [
+    "react"
+  ],
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "name": "@markusmattinen/react-utils-storybook",
+  "author": "Markus Mattinen",
+  "source": "src/index.ts",
+  "main": "dist/index.js",
+  "module": "dist/esm/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist/**"
+  ],
+  "engines": {
+    "node": ">=14"
+  },
+  "scripts": {
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "check-types": "tsc --noemit"
+  },
+  "dependencies": {
+    "@markusmattinen/react-utils": "*"
+  },
+  "devDependencies": {
+    "@emotion/cache": "^11.9.3",
+    "@emotion/react": "^11.9.3",
+    "@emotion/server": "latest",
+    "@emotion/styled": "^11.9.3",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/material": "^5.8.4",
+    "@storybook/addon-essentials": "^6.5.9",
+    "@storybook/builder-vite": "^0.1.36",
+    "@storybook/react": "^6.5.9",
+    "@types/react": "^18.0.14",
+    "@types/react-dom": "^18.0.5",
+    "@typescript-eslint/eslint-plugin": "^5.30.4",
+    "@typescript-eslint/parser": "^5.30.4",
+    "@vitejs/plugin-react": "^1.3.2",
+    "eslint": "^8.18.0",
+    "eslint-plugin-react": "^7.30.1",
+    "prettier": "^2.7.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^4.7.3",
+    "vite": "^2.9.10"
+  }
+}
